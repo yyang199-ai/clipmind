@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+wheels/
+
+# Environments
+.venv/
+venv/
+.env
+
+# Tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# ClipMind runtime data (never commit user history!)
+*.db
+*.db-wal
+*.db-shm
+demo.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Playwright
+scripts/__pycache__/
