@@ -34,5 +34,8 @@ demo.db
 .DS_Store
 Thumbs.db
 
+# Local launcher (hardcoded machine-specific python path)
+启动ClipMind.bat
+
 # Playwright
 scripts/__pycache__/
