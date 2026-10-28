@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ClipMind — 带大脑的剪贴板</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⧉</text></svg>">
+  <style>.hidden{display:none!important}</style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">⧉</span>
+      <span class="name">ClipMind</span>
+      <span class="tagline">your clipboard, with a brain</span>
+    </div>
+
+    <div class="search-wrap">
+      <span class="search-icon">⌕</span>
+      <input id="q" type="text" autocomplete="off" spellcheck="false"
+             placeholder="搜索你复制过的一切… 试试「验证码」「github 链接」「颜色」">
+      <button id="mode" class="mode" title="切换搜索模式">智能</button>
+      <kbd class="kbd-hint">↑↓ 选择 · Enter 复制 · Esc 清空</kbd>
+    </div>
+
+    <div class="statusbar">
+      <span id="stat-total" class="stat">…</span>
+      <span class="dot">·</span>
+      <span id="stat-semantic" class="stat">语义引擎检测中</span>
+      <span class="dot">·</span>
+      <span id="stat-live" class="stat live">● 实时</span>
+      <span class="spacer"></span>
+      <button id="btn-demo" class="ghost" title="注入一组示例剪贴板内容">示例数据</button>
+      <button id="btn-clear" class="ghost danger" title="清空未置顶的历史">清空</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="filters" class="filters"></div>
+    <div id="list" class="list" role="listbox"></div>
+    <div id="empty" class="empty hidden">
+      <div class="empty-art">⧉</div>
+      <h2>还没有剪贴板历史</h2>
+      <p>复制任何东西，它会在一秒内出现在这里。<br>
+         或者点一下上面的 <b>示例数据</b>，先看看 ClipMind 能看懂什么。</p>
+    </div>
+    <div id="nohits" class="empty hidden">
+      <div class="empty-art">⌕</div>
+      <h2>没有匹配的结果</h2>
+      <p>换个说法试试？语义模式下，描述它「是什么」比「包含什么字」更有效。</p>
+    </div>
+  </main>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
