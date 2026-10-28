@@ -52,8 +52,8 @@ dev = ["pytest>=7.0", "httpx>=0.25"]
 clipmind = "clipmind.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/clipmind/clipmind"
-Issues = "https://github.com/clipmind/clipmind/issues"
+Homepage = "https://github.com/yyang199-ai/clipmind"
+Issues = "https://github.com/yyang199-ai/clipmind/issues"
 
 [tool.setuptools.packages.find]
 include = ["clipmind*"]

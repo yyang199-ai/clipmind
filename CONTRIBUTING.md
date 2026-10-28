@@ -17,7 +17,7 @@ Thanks for helping build the clipboard manager you actually want to use.
 ## Dev setup
 
 ```bash
-git clone https://github.com/clipmind/clipmind
+git clone https://github.com/yyang199-ai/clipmind
 cd clipmind
 pip install -e '.[dev]'        # + '.[semantic]' if you want embeddings
 pytest                         # 58 tests, should be green

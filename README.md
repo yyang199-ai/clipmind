@@ -81,7 +81,7 @@ ranking only. **The UI never breaks because the model didn't load.**
 ### From source
 
 ```bash
-git clone https://github.com/clipmind/clipmind
+git clone https://github.com/yyang199-ai/clipmind
 cd clipmind
 pip install -e .          # dev: pip install -e '.[dev]'
 clipmind demo             # seed sample history
